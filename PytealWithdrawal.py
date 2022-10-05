@@ -8,3 +8,8 @@ def Bank_Account(receiver):
     is_receiver = Txn.receiver() == Addr(receiver)
     no_closeout_address = Txn.close_remainder_to() == Global.zero_address()
     no_rekeying = Txn.close_remainder_to() == Global.zero_address()
+    acceptable_fee = Txn.fee() <= Int(1000)
+    return And(
+        is_payment,
+        is_singletransaction,
+    )
