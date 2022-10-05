@@ -12,4 +12,8 @@ def Bank_Account(receiver):
     return And(
         is_payment,
         is_singletransaction,
+        is_receiver,
+        no_closeout_address,
+        no_rekeying,
+        acceptable_fee
     )
