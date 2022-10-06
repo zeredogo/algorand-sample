@@ -20,4 +20,4 @@ def Bank_Account(receiver):
 
     if __name__ == "__main__":
         program = Bank_Account("then you write the address you generated here")
-        
+        print(compileteal(program, main.Application))
