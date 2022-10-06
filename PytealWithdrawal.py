@@ -17,3 +17,7 @@ def Bank_Account(receiver):
         no_rekeying,
         acceptable_fee
     )
+
+    if __name__ == "__main__":
+        program = Bank_Account("then you write the address you generated here")
+        
