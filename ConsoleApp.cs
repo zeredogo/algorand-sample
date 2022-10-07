@@ -7,7 +7,8 @@ namespace DApp
         -references
         static void Main(string[] args)
         {
-            console.Writeline("Hello World");
+            Account account - new Account();
+            console.WrileLine(account.Address.ToString());
         }
     }
 }
