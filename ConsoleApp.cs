@@ -13,6 +13,10 @@ namespace DApp
             {
                 console.WrileLine("Address is  Valid")
             }
+            else
+            {
+                console.WrileLine("Address is not valid");
+            }
             console.WrileLine(account.Address.ToString());
         }
     }
