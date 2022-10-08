@@ -16,8 +16,8 @@ namespace DApp
             else
             
                 console.WrileLine("Address is not valid");
-             AlgodApi AlgodApiInstance = 
-             new AlgodApi("https://testnet-algorand.api.purestake.io/ps1", "YSXJSJHNDXZNSME&Y*EJWSJ67UEUEJUEHDE")
+             AlgodApi AlgodApiInstance = new AlgodApi("https://testnet-algorand.api.purestake.io/ps1", "YSXJSJHNDXZNSME&Y*EJWSJ67UEUEJUEHDE");
+             var accountInfo = AlgodApiInstance.AccountInformation(a.ToString());   
         }
     }
 }
