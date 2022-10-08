@@ -14,10 +14,10 @@ namespace DApp
                 console.WrileLine("Address is  Valid")
             }
             else
-            {
+            
                 console.WrileLine("Address is not valid");
-            }
-            console.WrileLine(account.Address.ToString());
+             AlgodApi AlgodApiInstance = 
+             new AlgodApi("https://testnet-algorand.api.purestake.io/ps1", "YSXJSJHNDXZNSME&Y*EJWSJ67UEUEJUEHDE")
         }
     }
 }
